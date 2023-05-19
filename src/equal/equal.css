@@ -1,0 +1,25 @@
+.equal {
+    border: 1px solid #E2E3E5;
+    background: var(--white);
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    max-width: 240px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06),
+    0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.equal__body {
+    background: #5D5FEF;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 24px 30px 25px;
+    color: var(--white);
+}
+
+.layout.dark .equal {
+    background: var(--bg-light);
+}

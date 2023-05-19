@@ -1,0 +1,105 @@
+:root {
+    --bg-light: #dddddd;
+    --bg-dark: #585858;
+    --button-dark: #3c3c3c;
+    --button-dark-disabled: #c5c5c5;
+    --white: #fff;
+}
+
+body {
+    margin: 0;
+}
+
+.layout {
+    background-color: var(--bg-light);
+    color: #111827;
+    max-width: 100vw;
+    min-height: 100vh;
+}
+
+.layout h2 {
+    max-width: 80vw;
+    margin: 0 auto;
+    text-align: justify;
+}
+.layout.dark h2 {
+    color: var(--white);
+}
+
+.layout.dark {
+    background-color: var(--bg-dark);
+    color: #111827;
+}
+
+.board {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.board_empty {
+    border: 1px dashed;
+    border-radius: 8px;
+    display: flex;
+    min-height: 400px;
+    align-items: center;
+    justify-content: center;
+}
+
+.board.constructor .block ,
+.board.constructor .block ,
+.board.constructor .block  {
+    cursor: grab;
+}
+
+.board.runtime .block .operation,
+.board.runtime .block .number,
+.board.runtime .block .equal {
+    cursor: pointer;
+}
+
+.button__modes{
+    display: flex;
+    justify-content: flex-end;
+}
+.button__mode {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F3F4F6;
+    border-radius: 6px;
+    padding: 1px;
+    box-shadow: 5px 3px 7px #cfa5a5;
+    border: 1px solid #cfc2c2;
+}
+
+.button__mode span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100px;
+    padding: 0 12px;
+    border-radius: 6px;
+}
+
+.button__mode.runtime .runtime{
+    border: 1px solid #E2E3E5;
+    background: var(--white);
+    transition: .3s all ease;
+}
+.button__mode.constructor .constructor{
+    border: 1px solid #E2E3E5;
+    background: var(--white);
+    transition: .3s all ease;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    max-width: 80vw;
+    margin: 0 auto;
+}

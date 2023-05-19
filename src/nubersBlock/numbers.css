@@ -1,0 +1,41 @@
+.numbers {
+    border: 1px solid #E2E3E5;
+    background: #fff;
+    padding: 4px;
+    width: 100%;
+    height: 100%;
+    max-width: 240px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06),
+    0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.numbers__body {
+    display: grid;
+    grid-template-columns: 72px 72px 72px;
+    gap: 8px;
+}
+
+.number {
+    background: #FFFFFF;
+    border: 1px solid #E2E3E5;
+    border-radius: 6px;
+    width: 72px;
+    height: 48px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 14px;
+}
+
+.layout.dark .numbers {
+    background: var(--bg-light);
+}
+
+.layout.dark .number {
+    background: var(--button-dark);
+    color: #fff;
+}
+
+.layout.dark .number:disabled {
+    color: var(--button-dark-disabled);
+}

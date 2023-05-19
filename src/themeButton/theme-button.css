@@ -1,0 +1,23 @@
+.layout .theme-switcher {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: rgb(226,227,229);
+  background: linear-gradient(270deg,
+    rgba(226,227,229,1) 37%,
+    rgba(243,244,246,1) 47%,
+    rgba(255,255,255,1) 50%);
+  box-shadow: 5px 3px 7px #cfa5a5;
+  border: 1px solid #cfc2c2;
+  width: 100px;
+  transition: .3s all ease;
+}
+
+.layout.dark .theme-switcher {
+  background: rgb(255,255,255);
+  background: linear-gradient(270deg,
+    rgba(255,255,255,1) 47%,
+    rgba(243,244,246,1) 50%,
+    rgba(226,227,229,1) 62%);
+  transition: .3s all ease;
+}
